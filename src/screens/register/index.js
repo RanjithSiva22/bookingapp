@@ -2,6 +2,8 @@ import React from 'react';
 
 import FieldLabel from '../../components/Label/index';
 import Head from '../../components/header/index';
+import Footer from '../../components/footer/index';
+
 
 import CustomTextInput from '../../components/FormComponents/TextInput';
 
@@ -13,8 +15,8 @@ function Register() {
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card">
-              <div class="card-header">Register</div>
-              <div class="card-body">
+              <div class="card-header" style={{backgroundColor:"green",textAlign:"center",fontSize:"30px"}}>Register</div>
+              <div class="card-body" style={{background:"#b5e7a0"}}>
                 <form action="" method="">
 
                 {/* rendering the username field */}
@@ -103,6 +105,7 @@ function Register() {
           </div>
         </div>
       </div>
+      <Footer/>
       </div>
   );
 }

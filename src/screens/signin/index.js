@@ -2,6 +2,8 @@ import React from 'react';
 import FieldLabel from '../../components/Label/index';
 
 import Head from '../../components/header/index';
+import Footer from '../../components/footer/index';
+
 
 import CustomTextInput from '../../components/FormComponents/TextInput';
 
@@ -17,8 +19,8 @@ function Signin() {
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card">
-              <div class="card-header">SIGNIN</div>
-              <div class="card-body">
+              <div class="card-header" style={{backgroundColor:"green",textAlign:"center",fontSize:"25px"}}>SIGNIN</div>
+              <div class="card-body" style={{background:"#b5e7a0"}}>
                 <form action="/home" method="post">
 
 
@@ -67,6 +69,7 @@ function Signin() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

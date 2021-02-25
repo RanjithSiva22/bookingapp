@@ -5,6 +5,9 @@ import Resetpassword from './screens/resetpassword/index';
 import Register from './screens/register/index';
 import Signin from './screens/signin/index';
 import Home from './screens/home/index';
+import Info from './screens/info/index';
+import About from './screens/about/index';
+
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -13,9 +16,12 @@ import * as serviceWorker from './serviceWorker';
 
 const router = (
    <Router>
-      <Route path="/home" component={Home} />
+      <Route path="/home" exact component={Home} />
       <Route path="/register" component={Register} />
       <Route path="/resetpassword" component={Resetpassword} />
+      <Route path="/home/:id" component={Info} />
+      <Route path="/about" component={About} />
+
       <Route exact path="/" component={Signin} />
    </Router>
 )

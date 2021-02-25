@@ -2,6 +2,8 @@ import React from 'react';
 import FieldLabel from '../../components/Label/index';
 
 import Head from '../../components/header/index';
+import Footer from '../../components/footer/index';
+
 
 import CustomTextInput from '../../components/FormComponents/TextInput';
 
@@ -79,6 +81,7 @@ function Resetpassword() {
           </div>
         </div>
     </div>
+    <Footer/>
     </div>
   );
 }
