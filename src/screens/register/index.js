@@ -64,7 +64,7 @@ function Register() {
                 </div>
 
                 {/* rendering the education field */}
-                <div class="form-group row">
+                {/* <div class="form-group row">
                   <FieldLabel
                     classStyle="col-md-4 col-form-label text-md-right"
                     textLabel={'Education'}
@@ -75,7 +75,7 @@ function Register() {
                       name="education"
                     />
                   </div>
-                </div>
+                </div> */}
                 
                   {/* rendering the password input field */}
                 <div class="form-group row">

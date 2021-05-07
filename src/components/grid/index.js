@@ -1,8 +1,15 @@
 import React from 'react';
 
 function Grid(props){
-    const {info}=props;
+    const {info,cast,crew}=props;
     const {backdrop_path,budget,status,vote_average,original_title}=info;
+    // const {name}=cast;
+    let name="";
+    cast.forEach(obj => {
+        name+=obj.name;
+        name+=", "
+    });
+    
     return(
         
         <div class="container" style={{color:"#fff",background:"#838060"}}>
@@ -12,7 +19,7 @@ function Grid(props){
            
 
             <div class="col-md col-sm-3 border" style={{paddingleft:"30px"}}>
-            <img src={`https://image.tmdb.org/t/p/original${backdrop_path}`} class="img-fluid mx-auto d-block" height="75%" width="75%" alt="interstellar" />
+            <img src={`https://image.tmdb.org/t/p/original${backdrop_path}`} class="img-fluid mx-auto d-block" height="100%" width="100%" alt="interstellar" />
             </div>
 
             
@@ -23,22 +30,16 @@ function Grid(props){
             <tbody>
                 <tr>
                 <th scope="row">DIRECTOR</th>
-                <td>Christopher Nolan</td>
+                <td>{`${crew}`}</td>
                 
                 </tr>
                 <tr>
-                <th scope="row">JONOUR</th>
-                <td>sci-fict <i class='fas fa-space-shuttle'></i> | Adventure</td>
-                
-                </tr>
-                <tr>
-                <th scope="row">IMDb<i class="fas fa-film"></i></th>
-                <td>8.6/10</td>
-                
+                <th scope="row">VOTE_AVERAGE</th>
+                <td>{`${vote_average}`}</td>
                 </tr>
                 <tr>
                 <th scope="row">CAST</th>
-                <td>Matthew McConaughey,Anne Hathaway</td>
+                <td>{`${name}`}</td>
                 
                 </tr>
                 <tr>
@@ -49,10 +50,7 @@ function Grid(props){
                 <th scope="row">STATUS</th>
                 <td>{`${status}`}</td>
                 </tr>
-                <tr>
-                <th scope="row">VOTE_AVERAGE</th>
-                <td>{`${vote_average}`}</td>
-                </tr>
+                
                 <tr>
                 <th scope="row">Languages</th>
                 <td>English,Tamil,Hindi</td>

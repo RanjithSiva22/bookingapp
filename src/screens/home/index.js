@@ -29,6 +29,7 @@ function Home() {
             <div style={{marginTop:"4rem",marginBottom:"1rem"}}>
             <Carousel />
             </div>
+            <h1>POPULAR MOVIES</h1>
             <div className="row">
                 {film.map(item => <CustomCard key={item.id} item={item} />)}
             </div>

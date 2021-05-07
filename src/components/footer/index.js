@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// import styles from './styles.module.css';
 
 function Footer(){
     return(
@@ -11,6 +11,9 @@ function Footer(){
                 <div class ="container" >
 
                     <p class="text-center">copyrights 2020 &#169;  Ranjith.</p>
+                    {/* <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-google"></a> */}
                 </div>
             </div>
         </footer>
